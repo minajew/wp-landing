@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Budujemy się dla Wisły</title>
+    <script src="https://kit.fontawesome.com/aee446619f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-content">
+            <div class="header-copy">
+
+                <h1>Budujemy się <br><span class="underline--magical">dla Wisły</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsam fugiat porro consectetur
+                    minima dignissimos voluptatum neque ullam nulla libero.</p>
+            </div>
+
+
+            <img class="header-img" src="./img/header-img.png" alt="">
+
+        </div>
+    </div>
+
+    <div id="max-width">
+        <div data-aos="fade-up" class="cards">
+            <div class="card">
+                <h2><i class="far fa-futbol"></i> Tytuł karty</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque illo eos corporis nesciunt
+                    quos nulla sit laborum officiis cumque!</p>
+            </div>
+            <div class="card">
+                <h2><i class="far fa-futbol"></i> Tytuł karty</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque illo eos corporis nesciunt
+                    quos nulla sit laborum officiis cumque!</p>
+            </div>
+            <div class="card">
+                <h2><i class="far fa-futbol"></i> Tytuł karty</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque illo eos corporis nesciunt
+                    quos nulla sit laborum officiis cumque!</p>
+            </div>
+        </div>
+
+
+        <form class="form" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8"
+            method="post">
+            <div class="field">
+                <!-- Imię -->
+                <label class="name">Imię</label>
+                <br>
+                <input type="text" name="first_name" required /><br />
+            </div>
+
+            <div class="field">
+                <!-- Nazwisko -->
+                <label class="name">Nazwisko</label>
+                <input type="text" name="last_name" required /><br />
+            </div>
+
+            <div class="field">
+                <!-- Pole email (wymagane) -->
+                <label class="name">email</label>
+                <input type="text" name="email" required /><br />
+            </div>
+
+            <div class="field">
+                <label class="name">data urodzenia</label>
+                <input name="custom_birthdate" type="date" value="" min="1900-01-01" max="2021-01-01" required /><br />
+            </div>
+
+            <div class="field">
+                <label class="name">miejscowość</label>
+                <input name="custom_city" type="text" value="" required /><br />
+            </div>
+
+            <div class="field">
+                <label class="name">telefon</label>
+                <input name="custom_phone" type="tel" value="+48" required /><br />
+            </div>
+            <label class="checkbox-form">
+                <input id="webform_consent#zNDC_0" type="checkbox" name="webform[consent#zNDC-ver#w8IG]" value="true"
+                    required />
+                <label for="webform_consent#zNDC_0" aria-required="true">* Wyrażam zgodę na przetwarzanie danych
+                    osobowych zgodnie z
+                    przepisami Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 roku
+                    w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych w sprawie swobodnego
+                    przepływu takich danych oraz uchylenia dyrektywy 95/46/WE ogólne rozporządzenie o ochronie danych)
+                    (Dz. Urz. UE. L Nr 119, str. 1).</label> <br />
+            </label>
+            <label class="checkbox-form">
+                <input id="webform_consent#zNab_0" type="checkbox" name="webform[consent#zNab-ver#w8Vx]" value="true"
+                    required />
+                <label for="webform_consent#zNab_0">* Wyrażam zgodę na przetwarzanie danych w celach marketingowych,
+                    ofertowych i promocyjnych dotyczących usług oferowanych przez Wisła Płock S.A i jej
+                    partnerów.</label> <br />
+            </label>
+            <!-- Token listy -->
+            <!-- Pobierz token na: https://app.getresponse.com/campaign_list.html -->
+            <input type="hidden" name="campaign_token" value="5XQxX" />
+
+            <input type="hidden" name="thankyou_url" value="https://minajew.pl/" />
+            <!-- Dodaj subskrybenta do cyklu follow up z określonego dnia (opcjonalnie) -->
+            <input type="hidden" name="start_day" value="0" />
+
+
+            <!-- Przycisk zapisu -->
+            <input class="field--full" type="submit" value="Dołącz do nas!" />
+
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <img src="./img/wisla-logo-white.png" alt="">
+    </div>
+
+
+
+</body>
+
+</html>
